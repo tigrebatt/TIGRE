@@ -3,36 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios de Marketing Digital</title>
+  <title>Monienla Web - Desarrollo Web Profesional</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Servicios de Marketing Digital</h1>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo">Monienla Web</a>
+        <ul>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h1>Desarrollo Web Profesional</h1>
+        <p>Creamos sitios web impresionantes para impulsar tu negocio en línea.</p>
+        <a href="#contact" class="btn">Contactar</a>
+      </div>
+    </div>
   </header>
-  <section id="services">
-    <h2>Nuestros Servicios</h2>
-    <ul>
-      <li>SEO (Optimización de Motores de Búsqueda)</li>
-      <li>Publicidad en Redes Sociales</li>
-      <li>Email Marketing</li>
-      <li>Marketing de Contenidos</li>
-    </ul>
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="service">
+        <h3>Diseño Web</h3>
+        <p>Creación de sitios web atractivos y funcionales que representan tu marca de manera efectiva.</p>
+      </div>
+      <div class="service">
+        <h3>Desarrollo Frontend</h3>
+        <p>Implementación de interfaces de usuario dinámicas y responsivas utilizando tecnologías modernas.</p>
+      </div>
+      <div class="service">
+        <h3>Optimización SEO</h3>
+        <p>Mejora del posicionamiento de tu sitio web en los motores de búsqueda para aumentar la visibilidad.</p>
+      </div>
+    </div>
   </section>
-  <section id="contact">
-    <h2>Contacto</h2>
-    <form id="contactForm" action="submit.php" method="post">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portafolio</h2>
+      <p>Explora algunos de nuestros proyectos recientes.</p>
+      <!-- Aquí podrías agregar una galería de imágenes de tus proyectos -->
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm" action="submit.php" method="post">
+        <input type="text" id="name" name="name" placeholder="Nombre" required>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
   </section>
   <footer>
-    <p>&copy; 2024 Servicios de Marketing Digital</p>
+    <div class="container">
+      <p>&copy; 2024 Monienla Web</p>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

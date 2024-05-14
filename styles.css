@@ -5,43 +5,86 @@ body {
   padding: 0;
 }
 
-header, section, footer {
-  padding: 20px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-h1, h2 {
-  color: #333;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
 }
 
-ul {
-  list-style-type: none;
+nav ul {
+  margin: 0;
   padding: 0;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
+nav ul li {
+  display: inline;
+  margin-left: 20px;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+
+.service h3 {
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
+.service p {
+  font-size: 16px;
+  margin-bottom: 0;
 }
 
 footer {
-  background-color: #f4f4f4;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
 }
