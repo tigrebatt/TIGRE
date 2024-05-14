@@ -1,0 +1,19 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $message = $_POST['message'];
+
+  // Aquí puedes agregar código para enviar el correo electrónico o guardar los datos en una base de datos
+
+  // Por ejemplo, enviar un correo electrónico de confirmación
+  $to = "tu@email.com";
+  $subject = "Nuevo mensaje de contacto desde el sitio web";
+  $body = "Nombre: $name\nEmail: $email\nMensaje: $message";
+  mail($to, $subject, $body);
+
+  // Redireccionar al usuario a una página de agradecimiento
+  header("Location: thankyou.html");
+  exit;
+}
+?>
